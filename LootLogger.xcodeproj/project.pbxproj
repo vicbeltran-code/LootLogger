@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAD038B8275EAC9E00DEC0BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD038B7275EAC9E00DEC0BC /* DetailViewController.swift */; };
 		CAFE143E275D67020033D287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE143D275D67020033D287 /* AppDelegate.swift */; };
 		CAFE1440275D67020033D287 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE143F275D67020033D287 /* SceneDelegate.swift */; };
 		CAFE1445275D67020033D287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFE1443275D67020033D287 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CAD038B7275EAC9E00DEC0BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CAFE143A275D67020033D287 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFE143D275D67020033D287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFE143F275D67020033D287 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				CAFE1473275D87B40033D287 /* ItemCell.swift */,
 				CAFE146F275D68E60033D287 /* Item.swift */,
 				CAFE1471275D6D920033D287 /* ItemStore.swift */,
+				CAD038B7275EAC9E00DEC0BC /* DetailViewController.swift */,
 				CAFE146D275D67970033D287 /* ItemsViewController.swift */,
 				CAFE1443275D67020033D287 /* Main.storyboard */,
 				CAFE1446275D67030033D287 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				CAFE143E275D67020033D287 /* AppDelegate.swift in Sources */,
 				CAFE1472275D6D920033D287 /* ItemStore.swift in Sources */,
 				CAFE1440275D67020033D287 /* SceneDelegate.swift in Sources */,
+				CAD038B8275EAC9E00DEC0BC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

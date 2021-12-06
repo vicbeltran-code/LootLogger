@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		CAFE143E275D67020033D287 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE143D275D67020033D287 /* AppDelegate.swift */; };
 		CAFE1440275D67020033D287 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE143F275D67020033D287 /* SceneDelegate.swift */; };
-		CAFE1442275D67020033D287 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE1441275D67020033D287 /* ViewController.swift */; };
 		CAFE1445275D67020033D287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFE1443275D67020033D287 /* Main.storyboard */; };
 		CAFE1447275D67030033D287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFE1446275D67030033D287 /* Assets.xcassets */; };
 		CAFE144A275D67030033D287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFE1448275D67030033D287 /* LaunchScreen.storyboard */; };
 		CAFE1455275D67030033D287 /* LootLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE1454275D67030033D287 /* LootLoggerTests.swift */; };
 		CAFE145F275D67030033D287 /* LootLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE145E275D67030033D287 /* LootLoggerUITests.swift */; };
 		CAFE1461275D67030033D287 /* LootLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE1460275D67030033D287 /* LootLoggerUITestsLaunchTests.swift */; };
+		CAFE146E275D67970033D287 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE146D275D67970033D287 /* ItemsViewController.swift */; };
+		CAFE1470275D68E60033D287 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE146F275D68E60033D287 /* Item.swift */; };
+		CAFE1472275D6D920033D287 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE1471275D6D920033D287 /* ItemStore.swift */; };
+		CAFE1474275D87B40033D287 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE1473275D87B40033D287 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		CAFE143A275D67020033D287 /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFE143D275D67020033D287 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFE143F275D67020033D287 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAFE1441275D67020033D287 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAFE1444275D67020033D287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAFE1446275D67030033D287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAFE1449275D67030033D287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		CAFE145A275D67030033D287 /* LootLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LootLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFE145E275D67030033D287 /* LootLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITests.swift; sourceTree = "<group>"; };
 		CAFE1460275D67030033D287 /* LootLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAFE146D275D67970033D287 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		CAFE146F275D68E60033D287 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CAFE1471275D6D920033D287 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		CAFE1473275D87B40033D287 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				CAFE143D275D67020033D287 /* AppDelegate.swift */,
 				CAFE143F275D67020033D287 /* SceneDelegate.swift */,
-				CAFE1441275D67020033D287 /* ViewController.swift */,
+				CAFE1473275D87B40033D287 /* ItemCell.swift */,
+				CAFE146F275D68E60033D287 /* Item.swift */,
+				CAFE1471275D6D920033D287 /* ItemStore.swift */,
+				CAFE146D275D67970033D287 /* ItemsViewController.swift */,
 				CAFE1443275D67020033D287 /* Main.storyboard */,
 				CAFE1446275D67030033D287 /* Assets.xcassets */,
 				CAFE1448275D67030033D287 /* LaunchScreen.storyboard */,
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAFE1442275D67020033D287 /* ViewController.swift in Sources */,
+				CAFE1470275D68E60033D287 /* Item.swift in Sources */,
+				CAFE146E275D67970033D287 /* ItemsViewController.swift in Sources */,
+				CAFE1474275D87B40033D287 /* ItemCell.swift in Sources */,
 				CAFE143E275D67020033D287 /* AppDelegate.swift in Sources */,
+				CAFE1472275D6D920033D287 /* ItemStore.swift in Sources */,
 				CAFE1440275D67020033D287 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

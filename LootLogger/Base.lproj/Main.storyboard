@@ -16,40 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="xM1-na-GYy">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bT-QR-wck">
-                                    <rect key="frame" x="8" y="14.666666666666664" width="183" height="31"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingMode:" destination="cY4-n5-qO2" eventType="touchUpInside" id="1zz-Ja-WjW"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-5Y-BUD">
-                                    <rect key="frame" x="199" y="14.666666666666664" width="183" height="31"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewItem:" destination="cY4-n5-qO2" eventType="touchUpInside" id="XBT-W5-TnF"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="eBg-5Y-BUD" firstAttribute="width" secondItem="0bT-QR-wck" secondAttribute="width" id="8jM-Qd-6W9"/>
-                                <constraint firstItem="eBg-5Y-BUD" firstAttribute="centerY" secondItem="xM1-na-GYy" secondAttribute="centerY" id="CEc-4V-P8b"/>
-                                <constraint firstItem="0bT-QR-wck" firstAttribute="leading" secondItem="xM1-na-GYy" secondAttribute="leading" constant="8" id="mNQ-Fr-Thr"/>
-                                <constraint firstAttribute="trailing" secondItem="eBg-5Y-BUD" secondAttribute="trailing" constant="8" id="qCu-jB-2KX"/>
-                                <constraint firstItem="0bT-QR-wck" firstAttribute="centerY" secondItem="xM1-na-GYy" secondAttribute="centerY" id="rnd-db-W9S"/>
-                                <constraint firstItem="eBg-5Y-BUD" firstAttribute="leading" secondItem="0bT-QR-wck" secondAttribute="trailing" constant="8" id="wfy-jJ-zEj"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="65" id="xF6-hX-n7A" customClass="ItemCell" customModule="LootLogger" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="104.66666603088379" width="390" height="65"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xF6-hX-n7A" id="22v-p9-Y4O">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
@@ -96,7 +65,13 @@
                             <outlet property="delegate" destination="cY4-n5-qO2" id="rqi-Qx-rsj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="LootLogger" id="1T8-a5-dva"/>
+                    <navigationItem key="navigationItem" title="LootLogger" id="1T8-a5-dva">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EJb-56-OzU">
+                            <connections>
+                                <action selector="addNewItem:" destination="cY4-n5-qO2" id="RM2-8h-4qI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUW-8b-en6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

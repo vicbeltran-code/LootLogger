@@ -10,7 +10,7 @@ import UIKit
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
     
-    @IBAction func addNewItem(_ sender: UIButton) {
+    @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         // create item and add it to the store
         let newItem = itemStore.createItem()
         // fogure out where that item is in the array
@@ -21,21 +21,13 @@ class ItemsViewController: UITableViewController {
         tableView.insertRows(at: [indexPath], with: .automatic)
         }
     }
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
-        // if you are currently in editing mode..
-        if isEditing {
-            // change text of button to inform user of state
-            sender.setTitle("Edit", for: .normal)
-            // turn off editing mode
-            setEditing(false, animated: true)
-        } else {
-            // change text of button to inform user of state
-            sender.setTitle("Done", for: .normal)
-            // enter edititg mode
-            setEditing(true, animated: true)
+  
+        required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+            navigationItem.leftBarButtonItem = editButtonItem
         }
-       
-    }
+    
+
     override func  viewDidLoad() {
          super.viewDidLoad()
          

@@ -8,7 +8,9 @@
 import UIKit
 
 class ItemsViewController: UITableViewController {
+    
     var itemStore: ItemStore!
+    var imageStore: ImageStore!
     
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         // create item and add it to the store
@@ -55,9 +57,15 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         // if the table view is asking to commit a delete command...
         if editingStyle == .delete {
+            
             let item = itemStore.allItems[indexPath.row]
+            
             // remove the item from the store
             itemStore.removeItem(item)
+            
+            // remove the item from the store
+            itemStore.removeItem(item)
+            
             // also remove that row from the table view with an animation
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
@@ -76,6 +84,7 @@ class ItemsViewController: UITableViewController {
                 let item = itemStore.allItems[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
     default:preconditionFailure("Unexpected segue identifier.")
     }

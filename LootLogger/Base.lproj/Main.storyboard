@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Items View Controller-->
+        <!--LootLogger-->
         <scene sceneID="Obx-QK-fpb">
             <objects>
                 <tableViewController id="cY4-n5-qO2" customClass="ItemsViewController" customModule="LootLogger" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                             <outlet property="delegate" destination="cY4-n5-qO2" id="rqi-Qx-rsj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ge4-g0-WM3"/>
+                    <navigationItem key="navigationItem" title="LootLogger" id="1T8-a5-dva"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUW-8b-en6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,6 +126,9 @@
                                                 <rect key="frame" x="53" y="0.0" width="305" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="nIj-60-7Zg" id="Mgj-oh-jMG"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -147,6 +150,9 @@
                                                 <rect key="frame" x="53" y="0.0" width="305" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="nIj-60-7Zg" id="NH5-wf-IDc"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -163,14 +169,21 @@
                                                 <rect key="frame" x="53" y="0.0" width="305" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="nIj-60-7Zg" id="Srp-px-gUH"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1u-tA-TeL">
                                         <rect key="frame" x="0.0" y="126" width="358" height="580"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="D0n-F7-XQO" appends="YES" id="hNN-AG-JBw"/>
+                                        </connections>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -197,6 +210,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93k-Lc-ryX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="D0n-F7-XQO">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="nIj-60-7Zg" id="2hZ-fp-ONU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1609.2307692307693" y="65.402843601895725"/>
         </scene>
